@@ -11,21 +11,30 @@ accent color: HEX:#030F8B
 }
 
 body {
-    background-color: rgb(255,255,255);
-    font-family: 'Inter', sans-serif; 
+    background-color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
     color: #000000;
 }
+
 header {
     background-color: #DBDCE8;
 }
+
 main {
     padding: 10px;
     margin: 10px;
 }
-h1, h2, h3, h4 {line-height:1.4;}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
 h1 {
     font-size: 2.75 em;
     font-weight: 700;
@@ -42,46 +51,125 @@ h3 {
     font-weight: 500;
     text-align: center;
 }
+
 h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
+
 img {
 
-    width: 100% 
+    width: 100%
 }
-a:visted{ /* visited link*/
-    color:#301934} 
-a:active {/*selected link*/
-    color: #030F8B}
+
+a:visted {
+    /* visited link*/
+    color: #301934
+}
+
+a:active {
+    /*selected link*/
+    color: #030F8B
+}
+
 a:hover,
 a:focus {
     color: #cc6540;
     text-decoration: underline;
 }
+
 .button {
     display: inline-block;
-    background-color:#DBDCE8;
-    color:#000000; 
+    background-color: #DBDCE8;
+    color: #000000;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #DBDCE8;
+    transition: 0.2s opacity;
 }
+
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
 }
+
 .button.contact {
     background-color: transparent;
     color: #DBDCE8;
     text-transform: uppercase;
-    border: 2px solid #DBDCE8; 
+    border: 2px solid #DBDCE8;
 }
+
 .button.contact:hover {
     background-color: #DBDCE8;
-    color: #000000 ;
+    color: #000000;
 }
+
 footer {
     text-align: center;
+}
+#logo {max-width:100px;
+}
+[class*="col"] {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Medium devices (640px and larger)*/
+
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+}
+.col-md-6 {
+    width: 50%;
+}
+
+#hero span {
+    display: block;
+}
+[class*="col"] {
+    float: bottom-left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+    @keyframes color-change {
+        0% {fill: #edc655;}
+        50% {fill: #fcffad;}
+        100% {fill: #f76414;}
+    }
+    .sun {
+        animation-duration: 4s
+        animation-name: color-change
+        animation-iteration-count:infinite
+        animation-direction:alternate
+        animation-timing-function:linerar
+    }
+/*Large devices 1024px and larger)
+@media only sceen and (min-width: 1024px) {
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*X-large devices 1440px and larger)
+@media only screen and (mind-width: 1440px){
 }
