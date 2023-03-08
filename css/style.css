@@ -21,8 +21,41 @@ body {
 
 header {
     background-color: #DBDCE8;
+    text-align: center;
+    padding: 10px 0;
 }
-
+.logo {
+    max-width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.5em;
+}
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav>ul {
+    list-style-type: none;
+    padding:0;
+}
+nav>ul>li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+nav>ul>li>a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
 main {
     padding: 10px;
     margin: 10px;
@@ -43,7 +76,7 @@ h1 {
 
 h2 {
     font-size: 2.25em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h3 {
@@ -133,6 +166,15 @@ footer {
         margin-top: 4px;
     }
 }
+    nav>ul>li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
 .col-md-6 {
     width: 50%;
 }
