@@ -56,12 +56,14 @@
       </div>
     </header>
     <main>
-      <div>
+      <div id="about">
         <h1>About me</h1>
-        <picture>
-          <source srcset="img/profile_small.jpg" media="(max-width:767px)" />
-          <img src="img/profile_large.jpg" alt="Naomi Lauture" />
-        </picture>
+        <div class="about-me-image">
+          <picture>
+            <source srcset="img/profile_small.jpg" media="(max-width:767px)" />
+            <img src="img/profile_large.jpg" alt="Naomi Lauture" />
+          </picture>
+        </div>
         <h2>
           Growing up as a musician, I've always had a creative bone under my
           belt and an eye for aesthetics. My background in hospitality led me to
@@ -71,28 +73,24 @@
         </h2>
       </div>
       <a href="files/naomi_ui_ux_designer.pdf" target="_blank">My resume</a>
-      <h2>
-        Skills
-        <ul>
-          <div class="row">
-            <div class="col-md-6"></div>
-          </div>
-          <li>
-            Brand identity Typography Design thinking Prototyping Wireframing
-            Usability Testing User Research Competitive Analysis A/B Testing
-            User Flows HTML, CSS and Javascript
-          </li>
-        </ul>
-      </h2>
-      <h2>
-        Tools
-        <div class="row">
-          <div class="col-md-6"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              Brand identity Typography Design thinking Prototyping Wireframing
+              Usability Testing User Research Competitive Analysis A/B Testing
+              User Flows HTML, CSS and Javascript
+            </li>
+          </ul>
         </div>
-        <ul>
-          Figma Adobe XD Adobe Illustrator Balsamiq Canva
-        </ul>
-      </h2>
+        <div class="col-md-6">
+          <h2>Tools</h2>
+          <ul>
+            Figma Adobe XD Adobe Illustrator Balsamiq Canva
+          </ul>
+        </div>
+      </div>
     </main>
     <footer id="contact">
       <div>

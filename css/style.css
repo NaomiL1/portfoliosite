@@ -7,7 +7,7 @@ accent color: HEX:#030F8B
 /*Layout styling*/
 
 .container {
-  padding: 0 15 px;
+  padding: 0 15px;
 }
 
 body {
@@ -30,6 +30,11 @@ header {
   font-size: 20px;
   font-weight: 600;
   line-height: 2.5em;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
 }
 
 nav > ul {
@@ -58,6 +63,27 @@ nav > ul > li > a {
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(219, 220, 232);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 main {
@@ -96,6 +122,12 @@ h4 {
 
 img {
   width: 100%;
+}
+#about img {
+  width: 200px;
+}
+.about-me-image {
+  text-align: center;
 }
 
 a:visted {
