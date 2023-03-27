@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/01b7c8dea1.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
-    >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
       rel="stylesheet"
-    >
+    />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naomi Lauture UI/UX Designer</title>
-    <i class="fa-regular fa-bars"></i>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
+          <div class="logo image">
+            <picture>
+              <source srcset="img/logo_small.png" media="(max-width:767px)" />
+              <img src="img/logo_large.png" alt="Logo" />
+            </picture>
+          </div>
           <nav>
             <ul>
               <li><a href="index.html">work</a></li>
               <li><a href="about.html">about me</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li>
+                <a href="#contact" onclick="menuToggle()">Contact</a>
+              </li>
               <li>
                 <a
                   href="javascript:void(0);"
                   class="icon"
                   onclick="menuToggle()"
-                  ><i class="fas fa-bars"></i
-                ></a>
+                >
+                  <i class="fas fa-bars"></i>
+                </a>
               </li>
             </ul>
           </nav>
-          <div class="logo image">
-            <picture>
-              <source srcset="img/logo_small.png" media="(max-width:767px)" >
-              <img src="img/logo_large.png" alt="Logo" >
-            </picture>
-          </div>
         </div>
       </div>
     </header>
     <main class="max-width">
       <div id="hero">
         <div class="container">
-          <h2>Hi! I'm Naomi, a UI/UX designer based in the DMV area.
-          I'm a lover of psychology and the design thinking process. Welcome to my portfolio!
+          <h2>
+            Hi! I'm Naomi, a UI/UX designer based in the DMV area. I'm a lover
+            of psychology and the design thinking process. Welcome to my
+            portfolio!
           </h2>
-          <p>
-          <h4>Welcome to my portfolio!</h4>
-          </p>
         </div>
       </div>
       <div class="row">
         <h3>OM Yoga</h3>
         <div class="col-md-6 col-sm-12">
           <picture>
-            <source srcset="img/omyoga/om_yoga_small.jpg" media="(max-width:767px)">
-            <a href="omyoga.html" target="_blank"> </a>
-            <img src="img/omyoga/om_yoga_large.jpg" alt="Image of Work Sample"
-             > 
+            <source
+              srcset="img/omyoga/om_yoga_small.jpg"
+              media="(max-width:767px)"
+            />
+            <a href="omyoga.html"
+              ><img
+                src="img/omyoga/om_yoga_large.jpg"
+                alt="Image of Work Sample"
+            /></a>
           </picture>
           <p>
             This location-based, responsive yoga app allows you to book and take
             classes near you.
           </p>
         </div>
-      </div> 
+      </div>
 
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <picture>
             <source
               srcset="img/teacart/tea_cart_small.jpg"
-              media="(max-width:767px)">
-            <img src="img/teacart/tea_cart_large.jpg" alt="My Image" >
+              media="(max-width:767px)"
+            />
+            <a href="teacart.html">
+              <img src="img/teacart/tea_cart_large.jpg" alt="My Image"
+            /></a>
           </picture>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -114,14 +124,7 @@
           >
         </div>
 
-        <div class="container">
-          <a href="LINKEDIN-URL" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="BEHANCE-URL" target="_blank">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-        </div>
+        <div class="container"></div>
         <p>Copyright Naomi Lauture 2023</p>
       </div>
     </footer>
